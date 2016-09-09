@@ -1,0 +1,455 @@
+﻿/*-----------派生----------*/
+strong {
+     color: red;
+     }
+
+h2 {
+     color: red;
+     }
+
+h2 strong {
+     color: blue;
+     }
+/*-----------id----------*/	 
+#red{color:red;}
+#green{color:green;}
+
+#sidebar p {
+    color:blue;
+	font-style: italic;
+	text-align: center;
+	margin-top: 0.5em;
+	}
+/*-----------class----------*/
+.center {text-align: center;}
+.fancy td {
+    font-weight:bold;
+	color: #f60;
+	background: #666;
+	padding:10px;
+	}
+/*-----------属性----------*/
+[title]
+{
+color:red;
+font-weight:bold;
+}
+[title=W3School]
+{
+border:5px dotted blue;
+}
+[title~=color] { color:blue; }
+	
+[lang|=en]
+{
+color:pink;
+}	
+/*-----------链接----------*/	
+a:link {
+	display:block;/*将链接设置成块元素，前后自动换行*/
+	text-decoration:none;
+    color:#FF0000;
+	background-color:yellow;
+	width:120px;
+    text-align:center;
+    padding:4px;
+	}		/* 未被访问的链接 */
+a:visited {
+	text-decoration:none;
+	color:#00FF00;
+	}	/* 已被访问的链接 */
+a:hover {
+	text-decoration:underline;
+    color:#FF00FF;}	/* 鼠标指针移动到链接上 */
+a:active {
+	color:#0000FF;
+	text-decoration:underline
+	}
+
+/*--------列表----------*/
+ul.none {list-style-type: none}
+ul.disc {list-style-type: disc}
+ul.circle {list-style-type: circle}
+ul.square {list-style-type: square}
+ul.decimal {list-style-type: decimal}
+ul.decimal-leading-zero {list-style-type: decimal-leading-zero}
+ul.lower-roman {list-style-type: lower-roman}
+ul.upper-roman {list-style-type: upper-roman}
+ul.lower-alpha {list-style-type: lower-alpha}
+ul.upper-alpha {list-style-type: upper-alpha}
+ul.lower-greek {list-style-type: lower-greek}
+ul.lower-latin {list-style-type: lower-latin}
+ul.upper-latin {list-style-type: upper-latin}
+ul.hebrew {list-style-type: hebrew}
+ul.armenian {list-style-type: armenian}
+ul.georgian {list-style-type: georgian}
+ul.cjk-ideographic {list-style-type: cjk-ideographic}
+ul.hiragana {list-style-type: hiragana}
+ul.katakana {list-style-type: katakana}
+ul.hiragana-iroha {list-style-type: hiragana-iroha}
+ul.katakana-iroha {list-style-type: katakana-iroha}
+
+/*--------表格----------*/
+#customers
+  {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:100%;
+  border-collapse:collapse;
+  }
+
+#customers td, #customers th 
+  {
+  font-size:1em;
+  border:1px solid #98bf21;
+  padding:3px 7px 2px 7px;
+  }
+
+#customers th 
+  {
+  font-size:1.1em;
+  text-align:left;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:#A7C942;
+  color:#ffffff;
+  }
+
+#customers tr.alt td 
+  {
+  color:#000000;
+  background-color:#EAF2D3;
+  }
+/*--------轮廓,边框，外边距----------*/
+p.dotted {outline-style: dotted}
+p.dashed {outline-style: dashed}
+p.solid {outline-style: solid}
+p.double {outline-style: double}
+p.groove {outline-style: groove}
+p.ridge {outline-style: ridge}
+p.inset {outline-style: inset}
+p.outset {outline-style: outset}
+/*p 
+{
+border:red solid thin;
+outline:#00ff00 dotted thick;
+}*/
+p.two
+{
+border-color:red;
+border-style:solid;
+border-bottom-color:green;
+border-width:15px 5px 15px 5px;
+outline-color:blue;
+outline-style:dotted;
+outline-width:3px;
+}
+p.margin {margin: 2cm 4cm 3cm 4cm}
+h2 {
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  }
+/*--------定位----------*/  
+h2.pos_left
+{
+position:relative;/*相对定位：在使用相对定位时，无论是否进行移动，元素仍然占据原来的空间*/
+left:-20px
+}
+h2.pos_right
+{
+position:relative;
+left:20px
+}
+h2.pos_abs
+{
+position:absolute;/*绝对定位：“相对于”最近的已定位祖先元素，如果不存在已定位的祖先元素，那么“相对于”最初的包含块*/
+left:100px;
+top:150px
+}
+h2.pos_fix
+{
+position:fixed;/*固定定位*/
+left:100px;
+top:150px
+}
+
+
+ div.div1
+{
+background-color:#00FFFF;
+width:150px;
+height:150px;
+overflow: scroll/*设置滚动条*/
+}
+div.div2
+{
+background-color:#00FFFF;
+width:150px;
+height:150px;
+overflow: hidden;
+border-radius:55px;/*添加圆角矩形*/
+box-shadow: 10px 5px 20px #888888;/*向 div 元素添加方框阴影*/
+}
+div{
+	clear:both;
+}
+img 
+{/*
+position:absolute;
+clip:rect(0px 50px 200px 0px);
+z-index:-1;/*使图片位于文字下方（背景）*/
+float:left;
+}
+img.top {vertical-align:text-top;}
+img.bottom {vertical-align:text-bottom}
+/*float*/
+.news {
+  background-color: gray;
+  border: solid 1px black;
+  width:200px;
+  height:200px;
+  float: left;
+  }
+
+.news img {
+  float: left;
+  }
+
+.news p {
+  float: right;
+  }
+  .clear {
+  clear: both;
+  }
+ 
+/*--------边框---------*/
+ /*-----box-shadow/transform:rotate()/-----*/ 
+ body
+{
+margin:30px;
+background-color:#E9E9E9;
+}
+div.polaroid
+{
+width:294px;
+padding:10px 10px 20px 10px;
+border:1px solid #BFBFBF;
+background-color:white;
+/* Add box-shadow */
+box-shadow:2px 2px 3px #aaaaaa;
+}
+
+div.rotate_left
+{
+float:left;
+-ms-transform:rotate(7deg); /* IE 9 */
+-moz-transform:rotate(7deg); /* Firefox */
+-webkit-transform:rotate(7deg); /* Safari and Chrome */
+-o-transform:rotate(7deg); /* Opera */
+transform:rotate(7deg);/*顺时针旋转7度*/
+}
+
+div.rotate_right
+{
+float:left;
+margin-bottom:30px;
+-ms-transform:rotate(-8deg); /* IE 9 */
+-moz-transform:rotate(-8deg); /* Firefox */
+-webkit-transform:rotate(-8deg); /* Safari and Chrome */
+-o-transform:rotate(-8deg); /* Opera */
+transform:rotate(-8deg);/*逆时针旋转8度*/
+-webkit-border-radius:25px;/*添加圆角矩形，半径25像素； Safari and Chrome */
+}
+/*--------图片作为边框---------*/
+div.borderimage
+{
+border:15px solid transparent;
+width:300px;
+padding:10px 20px;
+}
+
+div.round
+{
+	/*border-image 属性，您可以使用图片来创建边框*/
+-moz-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 round;	/* Old Firefox */
+-webkit-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 round;	/* Safari and Chrome */
+-o-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 round;		/* Opera */
+border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 round;
+}
+
+div.stretch
+{
+-moz-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 stretch;	/* Old Firefox */
+-webkit-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 stretch;	/* Safari and Chrome */
+-o-border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 stretch;	/* Opera */
+border-image:url(http://www.w3school.com.cn/i/border.png) 30 30 stretch;
+}
+/*---------背景--------*/ 
+div.background
+{
+border:1px solid black;
+padding:35px;
+background-image:url('http://www.w3school.com.cn/i/bg_flower.gif');
+background-size:63px 100px;/*设置背景图片的尺寸*/
+background-repeat:no-repeat;
+background-position:left;
+}
+.div3
+{
+background-origin:border-box;/*规定背景图片的定位区域content-box、padding-box 或 border-box 区域*/
+}
+.div4
+{
+background-origin:content-box;
+}
+
+
+/*--------文本效果---------*/
+h1
+{
+text-shadow: 5px 5px 5px #FF0000;/*向文本添加阴影*/
+}
+p.wrap {
+	width:200px;
+	border:1px solid black;
+	word-wrap:break-word;
+	}/*许对长单词进行拆分，并换行到下一行*/
+	
+/*--------自定义字体@font-face --------*/	
+@font-face
+{
+font-family: myFirstFont;
+src: url('http://www.w3school.com.cn//example/css3/Sansation_italic.ttf'),
+     url('http://www.w3school.com.cn//example/css3/Sansation_italic.eot'); /* IE9+ */
+     font-style:italic;
+	 }
+p.font{font-family:myFirstFont;}
+
+	
+/*--------2D转换 --------*/		
+	
+	
+/*--------过度 --------*/		
+div.guodu1
+{
+width:100px;
+height:100px;
+background:yellow;
+transition:width 2s, height 2s;
+-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+-o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+}
+
+div.guodu1:hover
+{
+width:200px;
+height:200px;
+background-color:pink;
+transform:rotate(360deg);
+-moz-transform:rotate(180deg); /* Firefox 4 */
+-webkit-transform:rotate(720deg); /* Safari and Chrome */
+-o-transform:rotate(180deg); /* Opera */
+}
+div.guodu2
+{
+width:100px;
+height:100px;
+background:yellow;
+transition-property:width;/*应用过渡的 CSS 属性的名称*/
+transition-duration:1s;/*定义过渡效果花费的时间。默认是 0.*/
+transition-timing-function:linear;/*规定过渡效果的时间曲线。默认是 "ease"。*/
+transition-delay:2s;/*规定过渡效果何时开始,默认0.*/
+/* Firefox 4 */
+-moz-transition-property:width;
+-moz-transition-duration:1s;
+-moz-transition-timing-function:linear;
+-moz-transition-delay:2s;
+/* Safari and Chrome */
+-webkit-transition-property:width;
+-webkit-transition-duration:1s;
+-webkit-transition-timing-function:linear;
+-webkit-transition-delay:2s;
+/* Opera */
+-o-transition-property:width;
+-o-transition-duration:1s;
+-o-transition-timing-function:linear;
+-o-transition-delay:2s;
+}
+
+div.guodu2:hover
+{
+width:200px;
+}
+
+/*----------动画----------*/
+div.keyframes
+{
+width:100px;
+height:100px;
+background:red;
+text-align:center;
+position:relative;
+animation:myfirst 5s;/*-webkit-animation-duration: 5s;*/
+-moz-animation:myfirst 5s; /* Firefox */
+-webkit-animation:myfirst 5s; /* Safari and Chrome */
+-o-animation:myfirst 5s; /* Opera */
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 2s;
+animation-iteration-count:infinite;
+-webkit-animation-direction: alternate;
+-webkit-animation-play-state: running;
+/*-webkit-animation: myfirst 5s linear 2s infinite alternate;简写上述条件*/
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {-webkit-transform: rotate(0deg);background:red; left:0px; top:0px;}
+25%  {-webkit-transform: rotate(90deg);background:yellow; left:200px; top:0px;}
+50%  {-webkit-transform: rotate(180deg);background:blue; left:200px; top:100px;}
+75%  {-webkit-transform: rotate(270deg);background:green; left:0px; top:100px;}
+100% {-webkit-transform: rotate(360deg);background:red; left:0px; top:0px;}
+}
+
+/*--------设置列数-------*/
+.newspaper
+{
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:3;
+
+-moz-column-gap:40px; /* Firefox */
+-webkit-column-gap:40px; /* Safari and Chrome */
+column-gap:40px;
+
+-moz-column-rule:4px outset #ff0000; /* Firefox */
+-webkit-column-rule:4px dotted gray; /* Safari and Chrome */
+column-rule:4px outset #ff0000;
+}
+
+/*--------用户界面-------*/
+div.resize
+{
+border:2px solid;
+padding:10px 40px; 
+width:300px;
+resize:both;
+overflow:auto;
+}
+
+
+div.container
+{
+width:30em;
+border:1em solid;
+}
+div.box
+{
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+width:50%;
+border:1em solid red;
+float:auto;
+}

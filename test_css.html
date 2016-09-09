@@ -1,0 +1,332 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>study css</title>
+<link rel="stylesheet" type="text/css" href="file:///C:/Users/xiaohuanhuan/Desktop/css.css" >
+
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1>------派生选择器-------</h1>
+<p><strong>我是红色 粗体</strong></p>
+<h2>我是红色 2号标题</h3>
+<h2><strong>我是 蓝色 粗体 2号标题</strong></h2> 
+
+<h1>-------id 选择器-------</h1>
+<p id="red">这个段落是红色。</p>
+<p id="green">这个段落是绿色。</p>
+<div id="sidebar"><p>斜体居中</p></div>
+
+<h1>-------class 选择器-------</h1>
+<h1 class="center">This heading will be center-aligned</h1>
+<p class="center">This paragraph will also be center-aligned.</p>
+<table class="fancy">
+<tr>
+<td>100</td><td>200</td>
+</tr>
+<tr>
+<td>500</td><td>300</td>
+</tr>
+</table>
+
+<h1>-------属性选择器-------</h1>
+<h2 title="hello world">hello world</h2>
+<p title="W3School">为 title="W3School"的所有元素设置样式</p>
+<p title="dvb color">转换为包含color属性值的title属性所设置的样式blue</p>
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p><!--带分隔符时，应用title=|lang才可以识别出en,且应以en开头而不是结尾-->
+<p lang="us">Hi!</p>
+
+<h1>-------连接----------</h1>
+<p><b><a href="http://www.w3school.com.cn/index.html" target="_blank">这是一个链接</a></b></p>
+<p><b>注释：</b>为了使定义生效，a:hover 必须位于 a:link 和 a:visited 之后！！</p>
+<p><b>注释：</b>为了使定义生效，a:active 必须位于 a:hover 之后！！</p>
+
+<h1>-----------列表-----------</h1>
+
+<li>"none" 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+
+<ul class="disc">
+<li>Disc 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="circle">
+<li>Circle 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="square">
+<li>Square 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="decimal">
+<li>Decimal 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="decimal-leading-zero">
+<li>Decimal-leading-zero 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="lower-roman">
+<li>Lower-roman 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="upper-roman">
+<li>Upper-roman 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="lower-alpha">
+<li>Lower-alpha 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="upper-alpha">
+<li>Upper-alpha 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="lower-greek">
+<li>Lower-greek 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="lower-latin">
+<li>Lower-latin 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="upper-latin">
+<li>Upper-latin 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="hebrew">
+<li>Hebrew 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="armenian">
+<li>Armenian 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="georgian">
+<li>Georgian 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="cjk-ideographic">
+<li>Cjk-ideographic 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="hiragana">
+<li>Hiragana 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="katakana">
+<li>Katakana 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="hiragana-iroha">
+<li>Hiragana-iroha 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<ul class="katakana-iroha">
+<li>Katakana-iroha 类型</li>
+<li>茶</li>
+<li>可口可乐</li>
+</ul>
+
+<h1>-----------表格-----------</h1>
+<table id="customers">
+<tr>
+<th>Company</th>
+<th>Contact</th>
+<th>Country</th>
+</tr>
+
+<tr>
+<td>Apple</td>
+<td>Steven Jobs</td>
+<td>USA</td>
+</tr>
+
+<tr class="alt">
+<td>Baidu</td>
+<td>Li YanHong</td>
+<td>China</td>
+</tr>
+
+<tr>
+<td>Google</td>
+<td>Larry Page</td>
+<td>USA</td>
+</tr>
+
+<tr class="alt">
+<td>Lenovo</td>
+<td>Liu Chuanzhi</td>
+<td>China</td>
+</tr>
+
+<tr>
+<td>Microsoft</td>
+<td>Bill Gates</td>
+<td>USA</td>
+</tr>
+
+<tr class="alt">
+<td>Nokia</td>
+<td>Stephen Elop</td>
+<td>Finland</td>
+</tr>
+
+</table>
+
+<h1>-----------轮廓，边框，外边距-----------</h1>
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline</p>
+<p class="ridge">A ridge outline</p>
+<p class="inset">An inset outline</p>
+<p class="outset">An outset outline</p>
+<p class="two">This is some text in a paragraph.</p>
+
+<p class="margin">这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。</p>
+<h2>分别设置外边距</h2>
+
+
+<div class="div1">
+这个属性定义溢出元素内容区的内容会如何处理。如果值为 scroll，不论是否需要，用户代理都会提供一种滚动机制。因此，有可能即使元素框中可以放下所有内容也会出现滚动条。默认值是 visible。
+</div>
+<div class="div2">
+这个属性定义溢出元素内容区的内容会如何处理。如果值为 hidden，用户代理会影藏溢出的内容。因此，有可能即使元素框中可以放下所有内容也会出现滚动条。默认值是 visible。
+</div>
+
+<p>clip 属性剪切了一幅图像：</p>
+<img border="0" src="http://www.w3school.com.cn/i/eg_bookasp.gif" width="120" height="151">
+
+<p>
+这是一幅<img class="top" border="0" src="http://www.w3school.com.cn/i/eg_cute.gif" />位于段落中的图像。
+</p> 
+<p>
+这是一幅<img class="bottom" border="0" src="http://www.w3school.com.cn/i/eg_cute.gif" />位于段落中的图像。
+</p>
+<h2>这是位于正常位置的标题</h2>
+<h2 class="pos_left">这个标题相对于其正常位置向左移动</h2>
+<h2 class="pos_right">这个标题相对于其正常位置向右移动</h2>
+<p>相对定位会按照元素的原始位置对该元素进行移动。</p>
+<h2 class="pos_abs">这是带有绝对定位的标题</h2>
+<p>通过绝对定位，元素可以放置到页面上的任何位置。下面的标题距离页面左侧 100px，距离页面顶部 150px。</p>
+<h2 class="pos_fix">这是带有固定定位的标题</h2>
+
+
+<div class="news">
+<img src="http://www.w3school.com.cn/i/eg_bookasp.gif" />
+<p>some textsome text</p>
+<div class="clear"></div>
+</div>
+
+<p style="margin-top:240px">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+
+<div class="polaroid rotate_left">
+<img src="http://www.w3school.com.cn//i/ballade_dream.jpg" alt="郁金香" width="284" height="213" />
+<p class="caption">上海鲜花港的郁金香，花名：Ballade Dream。</p>
+</div>
+
+<div class="polaroid rotate_right">
+<img src="http://www.w3school.com.cn//i/china_pavilion.jpg" alt="世博中国馆" width="284" height="213" />
+<p class="caption">2010年上海世博会，中国馆。</p>
+</div>
+
+<div class="borderimage round">在这里，图片铺满整个边框。</div>
+<br>
+<div class="borderimage stretch">在这里，图片被拉伸以填充该区域。</div>
+
+<p>这是我们使用的图片：</p>
+<img src="http://www.w3school.com.cn//i/border.png">
+
+<p><b>注释：</b> Internet Explorer 不支持 border-image 属性。</p>
+<p>border-image 属性规定了用作边框的图片。</p>
+
+
+<p>background-origin:border-box:</p>
+<div class="background div3">
+这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+</div>
+
+<p>background-origin:content-box:</p>
+<div class="background div4">
+这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+</div>
+<p class="wrap">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+<p class="font">With CSS3, <i>websites</i> can finally use fonts other than the pre-selected "web-safe" fonts.</p>
+
+<div class="guodu1">请把鼠标指针放到黄色的 div 元素上，来查看过渡效果。</div>
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+
+<div class="guodu2"></div>
+
+<p>请把鼠标指针放到黄色的 div 元素上，来查看过渡效果。</p>
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+<p><b>注释：</b>这个过渡效果会在开始之前等待两秒。</p>
+
+<div class="keyframes"><br /><br />动画</div>
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+
+<div class="newspaper">
+人民网北京2月24日电 (记者 刘阳)国家发展改革委近日发出通知，决定自2月25日零时起将汽、柴油价格每吨分别提高300元和290元，折算到90号汽油和0号柴油（全国平均）每升零售价格分别提高0.22元和0.25元。
+
+此次国内成品油价格调整幅度，是按照现行国内成品油价格形成机制，根据国际市场油价变化情况确定的。去年11月16日国内成品油价格调整以来，受市场预期欧美经济复苏前景向好以及中东局势持续动荡等因素影响，国际市场原油价格先抑后扬，2月上旬WTI和布伦特原油期货价格再次回升至每桶95美元和115美元以上。虽然近两日价格有所回落，但国内油价挂钩的国际市场三种原油连续22个工作日移动平均价格上涨幅度已超过4%，达到国内成品油价格调整的边界条件。
+
+通知指出，这次成品油调价后，国家将按照已建立的补贴机制，继续对种粮农民、渔业（含远洋渔业）、林业、城市公交、农村道路客运（含岛际和农村水路客运）等给予补贴。同时，为保证市场物价基本稳定，防止连锁涨价，对与居民生活密切相关的铁路客运、城市公交、农村道路客运（含岛际和农村水路客运）价格不作调整。
+
+通知要求，中石油、中石化、中海油三大公司要组织好成品油生产和调运，保持合理库存，加强综合协调和应急调度，保障成品油供应。各级价格主管部门要加大市场监督检查力度，依法查处不执行国家价格政策，以及囤积居奇、造谣惑众、合谋涨价、搭车涨价等违法行为，维护正常市场秩序。
+</div>
+
+<div class="resize">resize 属性规定是否可由用户调整元素尺寸。</div>
+<br />
+<div class="container">
+<div class="box">这个 div 占据左半部分。</div>
+<div class="box">这个 div 占据右半部分。</div>
+</div>
+
+
+
+</body>
+</html>

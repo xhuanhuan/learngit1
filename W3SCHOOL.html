@@ -1,0 +1,778 @@
+<!DOCTYPE html> 
+<html manifest="file:///C:/Users/xiaohuanhuan/Desktop/demo.appcache"> 
+<head>
+<title>study html</title>
+<!--<link rel="stylesheet" type="text/css" href="file:///C:/Users/xiaohuanhuan/Desktop/outstyle.html" >
+<!--<link> 标签链接到一个外部样式表-->
+<style type="text/css">
+thead{color:green}
+tbody{color:blue}
+tfoot{color:red}
+
+div#container{width:500px}
+div#header{background-color:#99bbbb}
+div#menu{width:400px;height:200px;background-color:#ffff99;float:left}
+div#content{height:200px;width:100px;background-color:#000000;float:left}
+div#footer{background-color:#99bbbb;text-align:center;clear:both}
+h1 {margin-bottom:0;}
+h2 {margin-bottom:0;font-size:28px;}
+ul {margin:0;}
+li {list-style:none;}
+
+#div2{float:left; width:100px; height:35px; margin:10px; border:1px solid #000000;}
+</style>
+<base target="_blank" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<<script type="text/javascript">
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+
+
+</head>
+
+<body background="d://娱乐/图片/5.jpg"<!--bgcolor="pink"-->> <!--设置背景色为粉色--设置背景图片-->
+<h1 align="center" style="color:red"><marquee direction="right" scrollamount="20" bgcolor="yellow">测试文档</marquee></h1><!--标题标签后面自动换行--><!--居中-->
+<h2 style="color:red">1.1 标题</h1>
+<p>this is a head</p>
+
+<h2><font color="red">1.2 段落</font></h2>
+<p>My first paragraph.</p>
+<textarea contentEditable="true" spellcheck=true ></textarea></br><!--可编辑区域-->
+
+<h2>1.3 连接</h2>
+<p>clic me<a href="http://www.w3school.com.cn" style="text-decoration:none">
+http://www.w3school.com.cn</a></p></br><!--无下划线的连接-->
+
+<h2>1.4 图片</h2>
+<img src="http://www.w3school.com.cn/i/eg_w3school.gif" width="300" height="120"></img>
+
+<h2>1.5 表格</h2>
+
+<p>每个表格由 table 标签开始。</p>
+<p>每个表格行由 tr 标签开始。</p>
+<p>每个表格数据由 td 标签开始。</p>
+<p>表头使用 <th> 标签进行定义。</p>
+<p>标题使用 <caption> 标签进行定义。</p>
+<p>表头属性colspan=n横跨n列</p>
+<p>表头属性rowspan=n横跨n行</p>
+<p>表格属性cellpadding="n"设置单元格边距</p>
+<p>表格属性cellspacing="n"设置单元格间距</p>
+<p>表格属性bgcolor=".."设置表格背景颜色</p>
+<p>表格属性background="路径"设置表格背景图片</p>
+<p>属性align排列单元格的内容。</p>
+<p>表格属性frame="..."设置表格框架</p>
+<table border="5" cellpadding="10" >
+<caption>我的标题</caption>
+<thead>
+<tr>
+<th>month</th><th>saving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>january</td>
+<td  contentEditable="true">120$</td>
+</tr>
+<tr>
+<td>febnary</td>
+<td  contentEditable="true">135$</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>sum</td>
+<td  contentEditable="true">255$</td>
+</tr>
+</tfoot>
+</table>
+
+<h4>横跨两列的单元格：</h4>
+<table border="1" cellpadding="10">
+<tr>
+  <th bgcolor="red">姓名</th>
+  <th colspan="2">电话</th>
+</tr>
+<tr>
+  <td>Bill Gates</td>
+  <td>555 77 854</td>
+  <td>555 77 855</td>
+</tr>
+</table>
+
+<h4>横跨两行的单元格：</h4>
+<table border="1"cellpadding="10">
+<tr>
+<th>姓名</th>
+<td background="d://娱乐/图片/4.jpg">bill Gates</td>
+</tr>
+<tr>
+<th rowspan="2">电话</th>
+<td>555 77 854</td>
+</tr>
+<tr>
+<td>555 77 855</td>
+</tr>
+</table>
+
+<h4>表格内的标签</h4>
+<table border="1" cellpadding="5" cellspacing="10" background="d://娱乐/图片/4.jpg">
+<tr>
+<td>
+<p>这是一个段落</p>
+<p>这是一个段落</p>
+</td>
+<td>
+<p>这个单元包含一个表格</p>
+<table border="5" align="right">
+<caption>我的标题</caption>
+<tr>
+<th>年</th><th>月</th>
+</tr>
+<tr>
+<td  contentEditable="true">2015</td><td  contentEditable="true">08</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<p>这个单元包含一个列表</p>
+<ul>
+<li>苹果</li>
+<li>香蕉</li>
+<li>菠萝</li>
+</ul>
+</td>
+<td>
+<p>hello</p>
+</td>
+</tr>
+</table>
+<br />
+<p>框架对比：</p>
+<p>Table with frame="box":</p>
+<table frame="box">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+<p>Table with frame="above":</p>
+<table frame="above">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+<p>Table with frame="below":</p>
+<table frame="below">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+<p>Table with frame="hsides":</p>
+<table frame="hsides">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+<table width="400" border="1">
+ <tr>
+  <th align="left">消费项目....</th>
+  <th align="right">一月</th>
+  <th align="right">二月</th>
+ </tr>
+ <tr>
+  <td align="left">衣服</td>
+  <td align="right">$241.10</td>
+  <td align="right">$50.20</td>
+ </tr>
+ <tr>
+  <td align="left">化妆品</td>
+  <td align="right">$30.00</td>
+  <td align="right">$44.45</td>
+ </tr>
+ <tr>
+  <td align="right">食物</td>
+  <td align="left">$730.40</td>
+  <td align="right">$650.00</td>
+ </tr>
+ <tr>
+  <th align="left">总计</th>
+  <th align="right">$1001.50</th>
+  <th align="right">$744.65</th>
+ </tr>
+</table>
+
+<h2>1.6 创建水平线</h2>
+<p>paragraph 1.</p><hr />
+<p>paragraph 2.</p><hr /><br /><!--换行-->
+
+<h2>1.7 文本格式化</h2>
+<b>This text is bold</b><!--加粗-->
+<br />
+<strong>This text is strong</strong><!--加重语气-->
+<br />
+<big>This text is big</big><!--大号字-->
+<br />
+<em>This text is emphasized</em><!--着重文字-->
+<br />
+<i>This text is italic</i><!--斜体-->
+<br />
+<small>This text is small</small><!--小号字-->
+<br />
+This text contains W<sub>ij</sub><!--下标-->
+This text contains 2<sup>8</sup><br />
+<del>delete</del><br /><!--删除字-->
+<s>delete</s>
+
+<h2>1.8 计算机输出标签</h2>
+<code>Computer code</code><!--定义计算机码-->
+<br />
+<kbd>Keyboard input</kbd><!--定义键盘码-->
+<br />
+<tt>Teletype text</tt><!--定义打字机码-->
+<br />
+<samp>Sample text ae</samp> turn to &aelig; <!--定义计算机码样本-->
+<br />
+<var>Computer variable</var><!--定义变量-->
+<br />
+<pre>yu geshi text</pre>
+<br />
+
+<h2>1.9 地址</h2>
+<address>
+<p>
+Written by <a href="mailto:webmaster@example.com">Donald Duck</a>.<br /> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA</p>
+</address>
+
+<h2>1.10 缩写，加上title这样当鼠标移到该缩写/简称上时会显示全称</h2>
+<p>The <abbr title="People's Republic of China">PRC</abbr> was founded in 1949.</p><!--缩写全称-->
+<p><acronym title="World Wide Web">WWW</acronym></p>
+
+<h2>1.11 定义文字显示顺序rtl\ltr</h2>
+<bdo dir="rtl"><!--从友到左-->
+<p>晓博521.</p>
+</bdo>
+
+<h2 ><a name="1.12">1.12 长、短引用</a></h2><!--创建书签1.12-->
+<p>这是长的引用：</p>
+<blockquote>
+<p>这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。</p>
+</blockquote>
+
+<p>这是短的引用：</p>
+<q>
+<p>这是短的引用。</p>
+</q>
+
+<p>
+注：使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。
+</p>
+
+<h2>1.13 块元素div</h2>
+<h3>Welcome to News Website!</h3>
+<div class="news">
+<h4>News headline 1</h4>
+<p>some text 1.</p>
+</div>
+<div class="news">
+<h4>News headline 2</h4>
+<p>some text 2.</p>
+</div>
+<p class="tip"><span>提示：</span>... ... ...</p><!--组合文档中的行内元素-->
+
+<h2>1.14 链接</h2>
+<p>
+您也可以使用图像来作链接：
+<a href="http://www.w3school.com.cn/example/html/lastpage.html" >
+<img border="0" src="http://www.w3school.com.cn/i/eg_buttonnext.gif" />
+</a>
+</p>
+<a href="http://www.w3school.com.cn/" target="_blank" title="html学习网站">Visit W3School!</a>
+<p>如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。</p>
+<a href="#1.12">查看 1.12节</a>
+<p>点击 W3School 的 logo 来下载该图片：<p>
+<a href="http://www.w3school.com.cn/i/w3school_logo_white.gif" download="w3logo"><!--点击图片下载,默认文件名w3logo---->
+<img border="0" src="http://www.w3school.com.cn/i/w3school_logo_white.gif" alt="W3School">
+</a>
+
+<p>
+这是另一个 mailto 链接：
+<a href="mailto:someone@microsoft.com?subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!">发送邮件！</a>
+</p>
+
+
+
+<h2>1.15 图像</h2>
+
+<p>一幅图像：<br />
+<img src="d://娱乐/图片/3.jpg" width="128" height="128" />
+</p>
+<p>一幅动画图像：<br />
+<img src="http://www.w3school.com.cn/i/eg_cute.gif" width="70" />
+</p>
+<p>请注意，插入动画图像的语法与插入普通图像的语法没有区别。</p>
+<h3>已设置对齐方式的图像 align="..."：</h3>
+<p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif" align="bottom"> 在文本中</p>
+<p>图像 <img src ="http://www.w3school.com.cn/i/eg_cute.gif" align="middle"> 在文本中</p>
+<p>图像 <img src ="http://www.w3school.com.cn/i/eg_cute.gif" align="top"> 在文本中</p>
+<h3>图像浮动 align="..."：</h3>
+<p><img src ="http://www.w3school.com.cn/i/eg_cute.gif" align ="right"> 
+带有图像的一个段落。图像的 align 属性设置为 "right"。图像将浮动到文本的右侧。
+</p>
+<h3>图像的替换文本 alt="..."：</h3>
+<img src="http://www.w3school.com.cn/i/eg_goleft.gif" alt="向左转" />
+<p>当上述图像无法显示时将会显示该图像的替换文本，现象如：
+<img src="http://www.w3school.com.cn/i/eg_goleft123.gif" alt="向左转" />
+
+<h3>图像映射：</h3>
+<p>请点击图像上的星球，把它们放大。</p>
+<img src="http://www.w3school.com.cn/i/eg_planets.jpg" border="0" usemap="#planetmap" alt="Planets" />
+<map name="planetmap" id="planetmap">
+<area shape="circle" coords="180,139,14" href ="http://www.w3school.com.cn/example/html/venus.html" target ="_blank" alt="Venus" />
+<area shape="circle" coords="129,161,10" href ="http://www.w3school.com.cn/example/html/mercur.html" target ="_blank" alt="Mercury" />
+<area shape="rect" coords="0,0,110,260" nohref="nohref" target ="_blank" alt="Sun" />
+</map>
+<p><b>注释：</b>img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），所以我们同时向 map 元素添加了 "id" 和 "name" 属性。</p>
+<p>nohref排除太阳区域</p>
+<h3>把图像转化为图像映射：</h3>
+<p>请把鼠标移动到图像上，看一下状态栏的坐标如何变化。</p>
+<a href="http://www.w3school.com.cn/example/html/html_ismap.html"  target="_blank">
+<img src="http://www.w3school.com.cn/i/eg_planets.jpg" ismap />
+</a>
+
+<h2>1.16列表</h2>
+<p>无序列表ul</p>
+<p>有序列表ol</p>
+<p>自定义列表dl:dt定义项目，dd定义该项目的描述</p>
+<h4>无序：</h4>
+<h4>Disc 项目符号列表：</h4>
+<ul type="disc">
+ <li>苹果</li>
+ <li>香蕉</li>
+ <li>柠檬</li>
+ <li>桔子</li>
+</ul>  
+
+<h4>Circle 项目符号列表：</h4>
+<ul type="circle">
+ <li>苹果</li>
+ <li>香蕉</li>
+ <li>柠檬</li>
+ <li>桔子</li>
+</ul>  
+
+<h4>Square 项目符号列表：</h4>
+<ul type="square">
+ <li>苹果</li>
+ <li>香蕉</li>
+ <li>柠檬</li>
+ <li>桔子</li>
+</ul>  
+<h4>有序：</h4>
+<ol>
+<li>牛奶</li>
+<li>咖啡</li>
+</ol>
+<ol start="50">
+<li>芒果</li>
+<li>榴莲</li>
+</ol>
+<h4>字母列表：</h4>
+<ol type="A">
+ <li>苹果</li>
+ <li>香蕉</li>
+ <li>柠檬</li>
+ <li>桔子</li>
+</ol> 
+<h4>自定义：</h4>
+<dl>
+<dt>Coffee</dt>
+<dd>Black hot drink</dd>
+<dd>dwcwe</dd>
+<dt>Milk</dt>
+<dd>White cold drink</dd>
+</dl>
+
+<h4>一个嵌套列表：</h4>
+<ul>
+  <li>咖啡</li>
+  <li>茶
+    <ul>
+    <li>红茶</li>
+    <li>绿茶</li>
+    </ul>
+  </li>
+  <li>牛奶</li>
+</ul>
+
+<h2>1.18 表单</h2>
+<p><font color="red">表单1:用户登录</font></p>
+<form action="show.aspx" method="get">
+<input type="text"><br />
+<input type="password"><br />
+<input type="button" value="登录" disabled="disabled"><br /><!--禁用该按钮-->
+</form>
+<p><font color="red">表单2：单选框radio</font></p>
+<form action="show.aspx" method="get">
+<input type="radio" name="book">DIV
+<input type="radio" name="book" checked>HTML
+<input type="radio" name="book">CSS
+</form>
+
+<form>
+  <label for="male">Male</label><!--label相当于id-->
+  <input type="radio" name="sex" id="male" />
+  <br />
+  <label for="female">Female</label>
+  <input type="radio" name="sex" id="female" />
+</form>
+
+<p><font color="red">表单3：复选框checkbox</font></p>
+<form action="show.aspx" method="get">
+<input type="checkbox" name="book" checked>DIV
+<input type="checkbox" name="book" checked>HTML
+<input type="checkbox" name="book">CSS
+</form>
+
+<p><font color="red">表单4：下拉列表select:option</font></p>
+<form action="show.aspx" method="get">
+<select name="book" >
+<option>DIV</option>
+<option selected>HTML</option>
+<option>CSS</option>
+</select>
+</form>
+
+<p><font color="red">表单5：文本域textarea</font></p>
+
+<form action="show.aspx" method="get">
+<textarea name=book rows=8 cols=50></textarea>
+</form>
+<p>当用户单击确认按钮submit时，表单的内容会被传送到另一个文件
+<form action=""/example/html/form_action.asp" method="get" id="nameform">
+Username: 
+<input type="text" name="user" />
+<input type="submit" form="nameform" value="Submit" />
+</form>
+<P>演示如何在数据周围绘制一个带标题的框</P>
+<form>
+  <fieldset><!--<fieldset> 标签将表单内容的一部分打包，生成一组相关表单的字段-->
+    <legend>健康信息</legend><!--<legend> 标签为 fieldset 元素定义标题-->
+    身高：<input type="text" />
+    体重：<input type="text" />
+  </fieldset>
+</form>
+
+<select>
+<optgroup label="水果">
+<option>苹果</option>
+<option>香蕉</option>
+</optgroup>
+<optgroup label="前端">
+<option>HTML</option>
+<option>CSS</option>
+<option>JavaScript</option>
+</optgroup>
+</select>
+
+<h3>div布局</h2>
+<div id="container">
+<div id="header">
+<h1>Main Title of Web Page</h1>
+</div>
+<div id="menu">
+<h2>menu</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</div>
+<div id="content" style="color:red">Content goes here</div>
+<div id="footer">copyright w3shcool.com.cn</div>
+</div>
+
+<h2>1.19框架frameset:frame</h2>
+
+<h3>内联框架iframe</h3>
+<iframe src="http://www.w3school.com.cn/html/html_iframe.asp" height=200px width=800px frameborder="0" name="iframe_a"></iframe>
+<p><a href="d://娱乐/图片/3.jpg" target="iframe_a">图片/3</a></p>
+<p>上链接用于填充框架</p>
+<p>一些老的浏览器不支持 iframe。</p>
+<p>如果得不到支持，iframe 是不可见的。</p>
+
+
+
+<h1>2高级教程</h2><br />
+
+<h2>2.1头部元素</h2>
+<h3>重定向用户</h3>
+<p>
+对不起。我们已经搬家了。您的 URL 是
+<a href="http://www.w3school.com.cn" >http://www.w3school.com.cn</a>
+</p>
+<p>您将在 5 秒内被重定向到新的地址。</p>
+<p>如果超过 5 秒后您仍然看到本消息，请点击上面的链接。</p>
+
+
+<h2>2.2脚本</h2>
+<script type="text/javascript">
+document.write("<h1>Hello world</h1>")
+</script>
+<noscript>sorry,your browser do not support JavaScript</noscript>
+<p>不支持 JavaScript 的浏览器将显示 noscript 元素中的文本。</p>
+
+<h2>2.3字符实体</h2>
+<p>&lt;</p>
+<p>用实体数字（比如"#174"）或者实体名称（比如 pound,lt,gt）替代 "X"，然后查看结果。</p>
+
+<h2>2.4音频audio</h2>
+<audio controls="controls"><!-- autoplay="autoplay"-->
+  <source src="http://www.w3school.com.cn/i/song.ogg" type="audio/ogg">
+  <source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h2>2.5视频video</h2>
+<video width="320" height="240" controls="controls" >
+  <source src="http://www.w3school.com.cn/i/movie.ogg" type="video/ogg" />
+  <source src="http://www.w3school.com.cn/i/movie.mp4" type="video/mp4" />
+  <source src="http://www.w3school.com.cn/i/movie.webm" type="video/webm" />
+  <object data="http://www.w3school.com.cn/i/movie.mp4" width="320" height="240">
+    <embed width="320" height="240" src="/i/movie.swf" />
+  </object>
+</video>
+
+
+
+<h1 style="color:red">HTML 5</h1> 
+
+<h2>1.1拖放</h2>
+<div id="div1" style="float:left; width:100px; height:35px; margin:10px; border:1px solid #000000;"
+ondrop="drop(event)" ondragover="allowDrop(event)" border="2">
+<img src="http://www.w3school.com.cn/i/w3school_logo_black.gif" id="drag1" ondragstart="drag(event)" draggable="true" />
+</div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+</div>
+<br />
+<br />
+
+<h2>1.2画布</h2>
+<canvas id="myCanvas1" width="100" height="50" style="border:1px solid #000000">
+<script type="text/javascript">
+var c=document.getElementById("myCanvas1");
+var cxt=c.getContext("2d");
+cxt.fillStyle="#FF0000";
+cxt.arc(70,18,15,0,Math.PI*2,true);//圆(圆心坐标；半径；开始、结束幅度；顺时针)
+cxt.closePath();
+cxt.fill();
+</script></canvas>
+<br />
+<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000">
+<script type="text/javascript">
+var c=document.getElementById("myCanvas2");
+var cxt=c.getContext("2d");
+cxt.moveTo(10,10);//线
+cxt.lineTo(150,50);
+cxt.lineTo(23,50);
+cxt.stroke();//呈现画图效果
+</script></canvas><br />
+
+<canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000000">
+<script type="text/javascript">
+var c=document.getElementById("myCanvas3");
+var cxt=c.getContext("2d");
+var grd=cxt.createLinearGradient(0,0,175,50);//j矩形色阶
+grd.addColorStop(0,"#FF0000");
+grd.addColorStop(1,"#00FF00");
+cxt.fillStyle=grd;
+cxt.fillRect(0,0,175,50);
+</script></canvas><br />
+
+<canvas id="myCanvas4" width="300" height="300" style="border:1px solid #000000">
+<script type="text/javascript">
+var c=document.getElementById("myCanvas4");
+var cxt=c.getContext("2d");
+var grd=cxt.createRadialGradient(150,150,0,150,150,100);//圆形色阶
+grd.addColorStop(0.2,"#ff0000");
+grd.addColorStop(1,"#00ff00");
+cxt.fillStyle=grd;
+cxt.fillRect(0,0,400,300);
+</script></canvas><br />
+
+<canvas id="myCanvas5" width="100" height="100" style="border:1px solid #000000">
+<script type="text/javascript">
+var c=document.getElementById("myCanvas5");
+var cxt=c.getContext("2d");
+var img=new Image()//图片
+img.src="http://www.w3school.com.cn/i/eg_cute.gif"
+cxt.drawImage(img,0,0);
+</script></canvas><br />
+
+<h2>1.3地理定位</h2>
+
+<p id="demo1">点击这个按钮，获得您的位置：</p>
+<button onclick="getLocation()">试一下</button>
+<div id="mapholder"></div>
+<script>
+var x1=document.getElementById("demo1");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition,showError);
+    }
+  else{x1.innerHTML="Geolocation is not supported by this browser.";}
+  }
+
+function showPosition(position)
+  {
+  var latlon=position.coords.latitude+","+position.coords.longitude;
+
+  var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
+  +latlon+"&zoom=14&size=400x300&sensor=false";
+  document.getElementById("mapholder").innerHTML="<img src='"+img_url+"' />";
+  }
+
+function showError(error)
+  {
+  switch(error.code) 
+    {
+    case error.PERMISSION_DENIED:
+      x1.innerHTML="User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x1.innerHTML="Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x1.innerHTML="The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x1.innerHTML="An unknown error occurred."
+      break;
+    }
+  }
+</script><br />
+
+<h2>1.4 web存储</h2>
+<p><b>1.4.1</b> localStorage - 没有时间限制的数据存储</p>
+<script type="text/javascript">
+if(localStorage.pagecount)
+{
+localStorage.pagecount=Number(localStorage.pagecount)+1;
+}
+else{
+localStorage.pagecount=1;
+}
+document.write("Visits: " + localStorage.pagecount + " time(s).");
+</script>
+<p>刷新页面会看到计数器在增长。</p>
+<p>请关闭浏览器窗口，然后再试一次，计数器会继续计数。</p>
+
+<p><b>1.4.2</b> sessionStorage 方法针对一个 session 进行数据存储。当用户关闭浏览器窗口后，数据会被删除</p>
+<script type="text/javascript">
+if(sessionStorage.pagecount)
+{
+sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+}
+else{
+sessionStorage.pagecount=1;
+}
+document.write("Visits: " + sessionStorage.pagecount + " time(s).");
+</script>
+<p>刷新页面会看到计数器在增长。</p>
+<p>请关闭浏览器窗口，然后再试一次，计数器重新计数。</p>
+
+<h2>1.5 应用缓存</h2>
+
+<script type="text/javascript" src="C:/Users/xiaohuanhuan/Desktop/demo_tome.js">
+</script>
+<p id="timePara"><button onclick="getDateTime()">获得日期和事件</button></p>
+<p><img src="http://www.w3school.com.cn/i/eg_cute.gif" /></p>
+<p>请打开<a href="C:/Users/xiaohuanhuan/Desktop/W3SCHOOL.html" target="_blank">这个页面</a>，然后脱机浏览，重新加载页面。页面中的脚本和图像依然可用。</p>
+</body>
+
+<h2>1.6 web worker 是运行在后台的 JavaScript</h2>
+
+<p>计数: <output id="result"></output></p>
+<button onclick="startWorker()">开始 Worker</button> 
+<button onclick="stopWorker()">停止 Worker</button>
+<br /><br />
+
+<script>
+var w;
+
+function startWorker()
+{
+if(typeof(Worker)!=="undefined")
+  {
+  if(typeof(w)=="undefined")
+  {
+  w=new Worker("http://www.w3school.com.cn//example/html5/demo_workers.js");
+  }
+  w.onmessage = function (event) {
+    document.getElementById("result").innerHTML=event.data;
+    };
+  }
+else
+  {
+  document.getElementById("result").innerHTML="Sorry, your browser does not support Web Workers...";
+  }
+}
+
+function stopWorker()
+{ 
+w.terminate();
+}
+</script>
+
+
+</body> 
+</html> 
